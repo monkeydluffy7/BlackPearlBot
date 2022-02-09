@@ -1,0 +1,52 @@
+{
+  "name": "BlackPearlBot",
+  "description": "Telegram bot written in Python to Generate Posting Template bbcode for BlackPearl Forum By Dr.Luffy",
+  "repository": "https://github.com/monkeydluffy7/BlackPearlBot",
+  "logo": "https://avatars1.githubusercontent.com/u/34474300?s=280&v=4",
+  "keywords": ["python", "pyrogram", "telegram", "userbot"],
+  "image": "heroku/python",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "env": {
+      "API_HASH": {
+          "description": "Telegram API HASH from https://my.telegram.org"
+      },
+      "API_ID": {
+          "description": "Telegram API ID from https://my.telegram.org"
+      },
+      "CHAT_ID": {
+          "description": "Chat ID of user or groups,Seperate with space to use multiple id. Eg: -1245554444 652555 -12444255"
+      },
+      "TIME_OUT": {
+          "description": "Time in Seconds needed to wait for imdb message from user when it couldnt grab imdb from filename (Default = 40)"
+      },
+      "OMDB_KEY": {
+          "description": "OMDB API key from website"
+      },
+      "TMDB_KEY": {
+          "description": "TMDB API KEY from website"
+      },
+      "BOT_TOKEN": {
+          "description": "Bot token from @botfather"
+      },
+      "FOLDER_ID": {
+          "description": "Drive ID of the parent folder,Only the files or folder inside this folder is fetched"
+      },
+      "INDEX_URL": {
+          "description": "Index Url of the folder that you gonna fetch. The link that can access the folder of above given folder_id,Donot put / in the end"
+      }
+      
+  },
+  "buildpacks": [
+      {
+          "url": "https://github.com/monkeydluffy7/mediainfo-heroku.git"
+      },
+      {
+          "url": "heroku/python"
+      }
+      ]
+}
