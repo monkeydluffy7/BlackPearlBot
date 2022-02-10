@@ -270,9 +270,9 @@ class TemplateBot:
     	 	self.IMDB['Type'] = 'IMDB'
     	 #
     	self.BBCODE += f"[HR][/HR][INDENT][SIZE=6][FORUMCOLOR][B]{self.IMDB['Type']} Info :[/B][/FORUMCOLOR][/SIZE][/INDENT]\n[LIST]"
-    	self.BBCODE += f"[*][FORUMCOLOR][B]self.IMDB :[/B][/FORUMCOLOR] {self.IMDB['IMDBRating']} ({self.IMDB['IMDBVotes']})\n" if ('IMDBRating' in self.IMDB and self.IMDB['IMDBRating'] != 'N/A' and 'IMDBVotes' in self.IMDB and self.IMDB['IMDBVotes'] != 'N/A') else ''
+    	self.BBCODE += f"[*][FORUMCOLOR][B]IMDB :[/B][/FORUMCOLOR] {self.IMDB['IMDBRating']} ({self.IMDB['IMDBVotes']})\n" if ('IMDBRating' in self.IMDB and self.IMDB['IMDBRating'] != 'N/A' and 'IMDBVotes' in self.IMDB and self.IMDB['IMDBVotes'] != 'N/A') else ''
     	self.BBCODE += f"[*][FORUMCOLOR][B]Rated :[/B][/FORUMCOLOR] {self.IMDB['Rated']}\n" if ('Rated' in self.IMDB and self.IMDB['Rated'] != 'N/A') else ''
-    	self.BBCODE += f"[*][FORUMCOLOR][B]self.Genres :[/B][/FORUMCOLOR] {self.IMDB['Genre']}\n" if ('Genre' in self.IMDB and self.IMDB['Genre'] != 'N/A') else ''
+    	self.BBCODE += f"[*][FORUMCOLOR][B]Genres :[/B][/FORUMCOLOR] {self.IMDB['Genre']}\n" if ('Genre' in self.IMDB and self.IMDB['Genre'] != 'N/A') else ''
     	self.BBCODE += f"[*][FORUMCOLOR][B]Awards :[/B][/FORUMCOLOR] {self.IMDB['Awards']}\n" if ('Awards' in self.IMDB and self.IMDB['Awards'] != 'N/A') else ''
     	self.BBCODE += f"[*][FORUMCOLOR][B]Runtime :[/B][/FORUMCOLOR] {self.IMDB['Runtime']}\n" if ('Runtime' in self.IMDB and self.IMDB['Runtime'] != 'N/A') else ''
     	self.BBCODE += f"[*][FORUMCOLOR][B]Starring :[/B][/FORUMCOLOR] {self.IMDB['Actors']}\n" if ('Actors' in self.IMDB and self.IMDB['Actors'] != 'N/A') else ''
